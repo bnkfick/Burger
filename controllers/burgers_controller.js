@@ -4,12 +4,18 @@ var router = express.Router();
 var burger = require("../models/burger.js");
 
 
-router.get("/", function (req, res) {
 
-    console.log("fouter.get");
-
+router.get("/", function(req, res) {
+    console.log("router.get");
+    burger.all(function(data) {
+      var burgersObj = {
+        burgers: data
+      };
+      console.log(burgersObj);
+      res.render("index", burgersObj);
+    });
 });
-
+  
 router.post("/", function (req, res) {
     console.log("router.post");
 });

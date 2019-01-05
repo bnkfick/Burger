@@ -1,4 +1,10 @@
+<h1 class="text-center">Eat Da Burger</h1>
 
-    <h1 class="text-center">Eat Da Burger</h1>
-  
-   
+{{#each burgers}}
+{{#unless this.devoured}}
+
+    <h2>{{this.burger_name}}</h2>
+    <button type="submit">Devour it!</button>
+
+{{/unless}}
+{{/each}}
