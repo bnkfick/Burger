@@ -46,7 +46,7 @@ function printQuestionMarks(num) {
 
    selectAll: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
-      console.log(queryString);
+      //console.log(queryString);
       connection.query(queryString, function(err, result) {
         if (err) {
           throw err;
@@ -64,7 +64,7 @@ function printQuestionMarks(num) {
       queryString += printQuestionMarks(vals.length);
       queryString += ") ";
   
-      console.log(queryString);
+      //console.log(queryString);
   
       connection.query(queryString, vals, function(err, result) {
         if (err) {
@@ -81,7 +81,7 @@ function printQuestionMarks(num) {
       queryString += cols.toString();
       queryString += "=";
       queryString += "?";
-      console.log(queryString + " id : " + vals[0]);
+      //console.log(queryString + " id : " + vals[0]);
       connection.query(queryString, vals, function(err, result) {
         if (err) {
           throw err;
@@ -99,10 +99,9 @@ function printQuestionMarks(num) {
       queryString += " WHERE ";
       queryString += condition;
   
-      console.log(queryString);
+      //console.log(queryString);
       connection.query(queryString, function(err, result) {
         if (err) {
-          console.log(err);
           throw err;
         }
   

@@ -7,19 +7,12 @@ $(function () {
 
     var id = $(this).data("id");
     var devoured = $(this).data("neweaten");
-    console.log(`id ${id}`);
-    console.log(`devoured ${devoured}`);
-    console.log(this.data);
+     console.log(`id ${id}`);
+     console.log(`devoured ${devoured}`);
 
     var newIsEaten = {
       devoured: devoured
     };
-
-    if (devoured) {
-      alert("Move To Devoured");
-    } else {
-      alert("Reorder - Move to Devour");
-    }
 
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
@@ -53,7 +46,7 @@ $(function () {
         data: newBurger
       }).then(
         function () {
-          console.log("Added A Burger to Devour", burger);
+          //console.log("Added A Burger to Devour", burger);
           // Reload the page to get the updated list
           location.reload();
         }

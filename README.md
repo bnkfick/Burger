@@ -6,7 +6,7 @@
 ## Live Site
 - https://?.herokuapp.com/
 
-![Burger 1](Eat-Da-Burger1.png)
+![Delicious Burger](DeliciousBurgers.png)
 
 ## Description
 - Eat-Da-Burger is a restaurant logging app that lets users input the names of burgers they'd like to eat.
@@ -14,7 +14,7 @@
 - Each burger in the waiting area also has a 'Devour it!' button. When the user clicks it, the burger will move to the right side of the page.
 - The app will store every burger in a database, whether devoured or not.
 
-![Burger 2](Eat-Da-Burger2.png)
+
 
 ## Directory Structure
 ```

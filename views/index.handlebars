@@ -1,11 +1,12 @@
 <div class="container">
 
     <div class="text-center">
-        <h1 class="text-center">Eat Da Burger</h1>
 
+        <h1 class="text-center">Delicious<br>BURGERS</h1>
+        <img id="burger-img" src="/assets/images/burger.png">
         <form class="create-update-form" action="/" method="POST">
             <div class="form-group">
-                <input type="text" id="new-burger" name="burger_name">
+                <input type="text" class="chalk-border" id="new-burger" name="burger_name">
                 <input type="submit" id="add-burger" value="Place Order">
             </div>
         </form>
@@ -21,7 +22,7 @@
                 {{#each burgers}}
                 {{#unless this.devoured}}
                 <li class="list-group-item">
-                    <h2>{{this.burger_name}}</h2>
+                    <h3>{{this.burger_name}}</h3>
 
                     <button id="devour-burger" class="change-eaten" data-id="{{id}}" data-neweaten="1">
                         DEVOUR IT!
@@ -35,13 +36,13 @@
         </div>
 
         <div class="col-lg-6">
-            <h2>Devoured</h2>
+            <h2>Fulfilled</h2>
 
             <ul class="list-group">
                 {{#each burgers}}
                 {{#if this.devoured}}
                 <li class="list-group-item">
-                    <h2>{{this.burger_name}}</h2>
+                    <h3>{{this.burger_name}}</h3>
 
                     <button id="order-burger" class="change-eaten" data-id="{{id}}" data-neweaten="0">
                         ORDER IT AGAIN!
