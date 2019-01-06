@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    /* background-image: url("../../assets/images/hamburger.jpg"); 
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background-size: cover;       */
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.burgercell  {
+    background-color: white;  
+    color: #777777;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+#burger-img {
+    margin-top: 60px;
+    width: 100px;
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    color: #FC4A59;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 5px auto;
+}
+
+input[type="text"] {
+    margin-top: 20px;
+    width: 250px;
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+}
+
+#add-burger {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #FC4A59;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+#devour-burger {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #FC4A59;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+#order-burger {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 2px;
+    border: none;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #24AE5F;
+    color: #fff;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* borders */
+#top,
+#bottom,
+#left,
+#right {
+  background-color: #FC4A59;
+  position: fixed;
+}
+
+#left,
+#right {
+  top: 0;
+  bottom: 0;
+  width: 10px;
+}
+
+#left {
+  left: 0;
+}
+
+#right {
+  right: 0;
+}
+
+#top,
+#bottom {
+  left: 0;
+  right: 0;
+  height: 10px;
+}
+
+#top {
+  top: 0;
+}
+
+#bottom {
+  bottom: 0;
+}

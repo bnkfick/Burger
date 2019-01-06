@@ -54,9 +54,9 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
-    insertOne: function(table, cols, vals, cb) {
+    create: function(table, cols, vals, cb) {
       var queryString = "INSERT INTO " + table;
-  
+      console.log(queryString);
       queryString += " (";
       queryString += cols.toString();
       queryString += ") ";
@@ -91,7 +91,7 @@ function printQuestionMarks(num) {
       });
     },
     // An example of objColVals would be {name: panther, sleepy: true}
-    updateOne: function(table, objColVals, condition, cb) {
+    update: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   
       queryString += " SET ";
@@ -102,6 +102,7 @@ function printQuestionMarks(num) {
       console.log(queryString);
       connection.query(queryString, function(err, result) {
         if (err) {
+          console.log(err);
           throw err;
         }
   
